@@ -178,6 +178,11 @@ require get_template_directory() . '/inc/hooks.php';
 require get_template_directory() . '/inc/classes/index.php';
 
 /**
+ * Custom function
+ */
+require get_template_directory() . '/inc/custom-function.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
