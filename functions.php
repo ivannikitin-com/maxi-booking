@@ -140,7 +140,6 @@ function max_book_scripts() {
 add_action( 'wp_enqueue_scripts', 'max_book_scripts' );
 
 function add_style_footer() {
-	wp_enqueue_style( 'max_book-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
 
