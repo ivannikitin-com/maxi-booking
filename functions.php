@@ -125,14 +125,6 @@ add_action( 'widgets_init', 'max_book_widgets_init' );
  */
 function max_book_scripts() {
 	// Style
-	wp_enqueue_style( 'max_book-style', get_stylesheet_uri() );
-
-	wp_enqueue_style( 'max_book-bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-reboot-grid.min.css' );
-
-	wp_enqueue_style( 'max_book-owl-css', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.css' );
-
-	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
-
 
 	// Scripts
 	wp_enqueue_script( 'max_book-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), time(), true );
@@ -146,6 +138,18 @@ function max_book_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'max_book_scripts' );
+
+function add_style_footer() {
+	wp_enqueue_style( 'max_book-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
+
+	wp_enqueue_style( 'max_book-bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-reboot-grid.min.css' );
+
+	wp_enqueue_style( 'max_book-owl-css', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.css' );
+}
+
+add_action( 'get_footer', 'add_style_footer' );
 
 /**
  * Implement the Custom Header feature.

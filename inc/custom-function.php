@@ -41,3 +41,12 @@ function disable_emojicons_tinymce( $plugins ) {
     }
 }
 add_filter( 'emoji_svg_url', '__return_false' );
+
+// Remove jquery-migrate
+function isa_remove_jquery_migrate( &$scripts ) {
+    if( !is_admin() ) {
+    $scripts->remove( 'jquery' );
+    $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.12.4' );
+    }
+   }
+   add_filter( 'wp_default_scripts', 'isa_remove_jquery_migrate' );
