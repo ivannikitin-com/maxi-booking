@@ -141,9 +141,9 @@ add_action( 'wp_enqueue_scripts', 'max_book_scripts' );
 
 function add_style_footer() {
 
-	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
-
 	wp_enqueue_style( 'max_book-bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-reboot-grid.min.css' );
+	
+	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
 
 	wp_enqueue_style( 'max_book-owl-css', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.css' );
 }
