@@ -74,5 +74,3 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 	</div>
 	<?php endif; ?>
 <?php endif; ?>
-
-<?php max_book_post_thumbnail(); ?>

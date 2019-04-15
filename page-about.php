@@ -1,7 +1,7 @@
 <?php
 /**
  * Template part for displaying page content in page.php
- * Template Name: Страница "Контакты"
+ * Template Name: Страница "О компании"
  * Template Post Type: page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -22,7 +22,14 @@ get_header();
 				
 				if ( $banner ) :
 		?>
-			<div class="top-big page nobutton contacts-top" style="background-image: url(<?php echo $banner; ?>);"><div class="container"><div class="row"><div class="col-md-6"></div></div></div></div>
+			<div class="top-big page nobutton about-top" style="background-image: url(<?php echo $banner['bg']; ?>);">
+				<div class="container">
+					<div class="row">
+						<div class="img"><div class="inner" style="background-image: url(<?php echo $banner['bg_2']; ?>);"><img src="<?php echo $banner['image']['url']; ?>"></div></div>
+						<div class="col-md-6"><p class="h2 left white-col xs-center sm-center"><?php echo $banner['title']; ?></p></div>
+					</div>
+				</div>
+			</div>
 			<?php endif; ?>
 		<?php endif; ?>
 
@@ -32,13 +39,13 @@ get_header();
 		}
 		?>
 
-		<main id="main" class="site-main page page-contacts">
+		<main id="main" class="site-main about">
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/page/content', 'contact' );
+			get_template_part( 'template-parts/page/content', 'about' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

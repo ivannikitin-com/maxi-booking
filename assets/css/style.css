@@ -3564,9 +3564,6 @@ main.pms .krest > div > div {
 
 /******** PAGE -> ABOUT -> ABOUT US ********/
 /*top*/
-.about-top {
-  background-image: url("../uploads/about_about-us/top_bg.jpg");
-}
 .about-top .img {
   position: relative;
   width: 100%;
@@ -3578,7 +3575,8 @@ main.pms .krest > div > div {
   right: 0;
 }
 .about-top .img > .inner {
-  background: url("../uploads/about_about-us/top_bg2.png") center center no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -3647,14 +3645,13 @@ main.pms .krest > div > div {
   background-attachment: fixed;
 }
 .webp .about .deviz {
-  background-image: url("../uploads/about_about-us/compfixbg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 }
 .about .deviz-inner-block {
-  background-image: url("../uploads/about_about-us/bgbr.png");
+  background-image: url("../images/bgbr.png");
 }
 .about .deviz-inner-block h2 {
   color: #ffffff;
@@ -3662,7 +3659,7 @@ main.pms .krest > div > div {
 .about .semicircle li {
   font-size: 1.2em;
   line-height: 1.25;
-  background: url(../uploads/about_about-us/round.png) no-repeat;
+  background: url(../images/round.png) no-repeat;
   padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
