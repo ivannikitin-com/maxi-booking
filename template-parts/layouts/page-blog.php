@@ -100,11 +100,17 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 	<?php endif; ?>
 	<?php if ( $reports ) : ?>
 	<div class="row monserrat">
-		<?php foreach ($reports as $key => $repost) : ?>
+		<?php
+		if ( $reports ) :
+			foreach ($reports as $key => $repost) : 
+		?>
 			<div class="col-lg-2 <?php if ( $key == 0 ) echo "offset-lg-2"; ?>">
 				<p><small class="inline"><?php echo $repost['report']; ?></small></p>
 			</div>
-		<?php endforeach; ?>
+		<?php
+			endforeach;
+		endif;
+		?>
 	</div>
 	<?php endif; ?>
 </div>
@@ -154,13 +160,19 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 <div class="container bottom-widgets mt20">
 	<?php if ( $reservation ) : ?>
 	<div class="row products-widget">
-		<?php foreach ($reservation['reservation_item'] as $key => $item) : ?>
+		<?php
+		if ( $reservation['reservation_item'] ) :
+			foreach ($reservation['reservation_item'] as $key => $item) : 
+		?>
 		<div class="col-sm-6 col-lg-3">
 			<div class="image"><img src="<?php echo $item['reservation_image']['url']; ?>" alt="<?php echo $item['reservation_image']['alt']; ?>"></div>
 			<h4><?php echo $item['reservation_title']; ?></h4>
 			<p><small class="inline"><?php echo $item['reservation_description']; ?></small></p>
 		</div>
-		<?php endforeach; ?>
+		<?php 
+			endforeach; 
+		endif;
+		?>
 	</div>
 	<?php endif; ?>
 	

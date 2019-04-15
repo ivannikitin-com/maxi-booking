@@ -39,12 +39,16 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			</div>
 			<div class="row links">
 				<?php 
-				foreach ($slider['mainslide_links'] as $link) :
+				if ( $slider['mainslide_links'] ) :
+					foreach ($slider['mainslide_links'] as $link) :
 				?>
 				<div class="col-md-4">
 					<a href="<?php echo $link['mainslide_link']['url']; ?>" class="h3"><?php echo $link['mainslide_link']['title']; ?></a>
 				</div>
-				<?php endforeach; ?>
+				<?php 
+					endforeach; 
+				endif;
+				?>
 			</div>
 			<div class="row">
 				<div class="col-md-4 offset-md-4 center">
@@ -75,14 +79,20 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			</div>
 		</div>
 		<div class="row">
-			<?php foreach ($benefits['benefits_array'] as $item) : ?>
+			<?php 
+			if ( $benefits['benefits_array'] ) :
+				foreach ($benefits['benefits_array'] as $item) : 
+			?>
 			<div class="col-md-4 center mb80">
 				<picture>
 					<img src="<?php echo $item['benefits_array_image']['url']; ?>" alt="<?php echo $item['benefits_array_image']['alt']; ?>" class="mb20">
 				</picture>
 				<div><?php echo $item['benefits_array_description']; ?></div>
 			</div>
-			<?php endforeach; ?>
+			<?php 
+				endforeach; 
+			endif;
+			?>
 		</div>
 	</div>
 	<?php endif; ?>
@@ -117,9 +127,15 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			</div>
 			<div class="col-12">
 				<div class="clients-carousel owl-carousel">
-					<?php foreach ($clients['clients_images'] as $image) : ?>
-						<img src="<?php echo $image['clients_image']['url']; ?>" alt="<?php echo $image['clients_image']['alt']; ?>" width="220" height="100">
-					<?php endforeach; ?>
+					<?php
+					if ( $clients['clients_images'] ) :
+						foreach ($clients['clients_images'] as $image) : 
+					?>
+					<img src="<?php echo $image['clients_image']['url']; ?>" alt="<?php echo $image['clients_image']['alt']; ?>" width="220" height="100">
+					<?php
+						endforeach; 
+					endif;
+					?>
 				</div>
 			</div>
 		</div>
@@ -132,11 +148,17 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			<div class="row">
 				<div class="col-lg-10 col-xl-9 m0a">
 					<div class="owl-carousel">
-						<?php foreach ($reviews['reviews_review'] as $review) : ?>
-						<div class="center">
-							<p><?php echo $review['reviews_text']; ?></p>
-						</div>
-						<?php endforeach; ?>
+						<?php
+						if ( $reviews['reviews_review'] ) :
+							foreach ($reviews['reviews_review'] as $review) : 
+							?>
+							<div class="center">
+								<p><?php echo $review['reviews_text']; ?></p>
+							</div>
+							<?php
+							endforeach;
+						endif;
+						?>
 					</div>
 					<div class="center mt20">
 						<a href="<?php echo $reviews['reviews_button']['url']; ?>" class="button button-gray w100 mw300 sm-w100 upper"><?php echo $reviews['reviews_button']['title']; ?></a>
@@ -153,11 +175,16 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			<div class="col-lg-10 col-xl-9 m0a">
 				<h2><?php echo $result['result_title']; ?></h2>
 			</div>
-			<?php foreach ($result['result_description'] as $item) : ?>
-			<div class="col-md-6">
-				<?php echo $item['result_text']; ?>
-			</div>
-			<?php endforeach; ?>
+			<?php
+			if ( $result['result_description'] ) :
+				foreach ($result['result_description'] as $item) : ?>
+				<div class="col-md-6">
+					<?php echo $item['result_text']; ?>
+				</div>
+				<?php
+				endforeach;
+			endif;
+			?>
 		</div>
 	</div>
 	<?php endif; ?>
