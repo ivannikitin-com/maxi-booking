@@ -131,6 +131,8 @@ function max_book_scripts() {
 
 	wp_enqueue_script( 'max_book-owl-js', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.js', array('jquery'), time(), true );
 
+	wp_enqueue_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js', array(), time(), true );
+
 	wp_enqueue_script( 'max_book-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
