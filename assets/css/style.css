@@ -3793,7 +3793,6 @@ textarea:active {
 /******** PAGE -> ABOUT -> PARTNERS ********/
 /*top*/
 .partners-top {
-  background-image: url("../uploads/about_partners/top_bg.jpg");
   background-position-x: 40%;
 }
 .partners-top .img {
@@ -3844,7 +3843,6 @@ textarea:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../uploads/about_partners/hoelb-1.jpg");
   background-attachment: fixed;
 }
 .webp .partners .partners-bottom-img {
@@ -3852,7 +3850,6 @@ textarea:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../uploads/about_partners/hoelb-1.webp");
   background-attachment: fixed;
 }
 
