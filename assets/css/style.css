@@ -3859,7 +3859,6 @@ textarea:active {
 /******** PAGE -> ABOUT -> PARTNERS PROGRAMM ********/
 /*top*/
 .partners-program-top {
-  background-image: url("../uploads/about_partners-program/top_bg.jpg");
   background-position: 40% center;
 }
 @media (max-width: 767px) {
@@ -3885,36 +3884,6 @@ textarea:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.no-webp .partners-program .shahm .dohod.imageblock {
-  background-image: url("../uploads/about_partners-program/partners-dohod.jpg");
-}
-.webp .partners-program .shahm .dohod.imageblock {
-  background-image: url("../uploads/about_partners-program/partners-dohod.webp");
-}
-.no-webp .partners-program .shahm .partnery.imageblock {
-  background-image: url("../uploads/about_partners-program/partners.jpg");
-}
-.webp .partners-program .shahm .partnery.imageblock {
-  background-image: url("../uploads/about_partners-program/partners.webp");
-}
-.no-webp .partners-program .shahm .obuchenie.imageblock {
-  background-image: url("../uploads/about_partners-program/learn.jpg");
-}
-.webp .partners-program .shahm .obuchenie.imageblock {
-  background-image: url("../uploads/about_partners-program/learn.webp");
-}
-.no-webp .partners-program .shahm .podderzhka.imageblock {
-  background-image: url("../uploads/about_partners-program/support.jpg");
-}
-.webp .partners-program .shahm .podderzhka.imageblock {
-  background-image: url("../uploads/about_partners-program/support.webp");
-}
-.no-webp .partners-program .shahm .viplaty.imageblock {
-  background-image: url("../uploads/about_partners-program/payments.jpg");
-}
-.webp .partners-program .shahm .viplaty.imageblock {
-  background-image: url("../uploads/about_partners-program/payments.webp");
 }
 @media screen and (max-width: 767px) {
   .partners-program .textblock {
@@ -3948,13 +3917,11 @@ textarea:active {
   }
 }
 .no-webp .partners-program .begin {
-  background-image: url("../uploads/about_partners-program/partners-slogan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .webp .partners-program .begin {
-  background-image: url("../uploads/about_partners-program/partners-slogan.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
