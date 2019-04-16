@@ -714,6 +714,9 @@ body .owl-carousel .owl-dots .owl-dot:hover span {
     visibility: hidden;
     transition: visibility 800ms;
   }
+  #navbar nav > ul > li.dropdown > ul {
+    margin-left: 0;
+  }
   #navbar nav > ul > li.dropdown:hover > ul {
     visibility: visible;
   }
@@ -2853,9 +2856,6 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
 
 /******** PRODUCTS -> PMS DLYA OTELYA ********/
 /*top*/
-.pms-top {
-  background-image: url("../uploads/products_pms/top_bg.jpg");
-}
 .pms-top .img {
   position: relative;
   width: 100%;
@@ -2983,7 +2983,8 @@ main.pms .krest > div > div {
 
 /*preimushestva*/
 .preimushestva {
-  background: url("../uploads/products_pms/preimushestva.jpg") 65% center no-repeat;
+  background-repeat: no-repeat;
+  background-position: 65% center;
   background-attachment: fixed;
 }
 .preimushestva ul > li:last-child {
