@@ -117,6 +117,16 @@ function max_book_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Пoдвал страницы "Блог"', 'max_book' ),
+		'id'            => 'blog-category-footer',
+		'description'   => esc_html__( 'Add widgets here.', 'max_book' ),
+		'before_widget' => '<div class="col-6 col-md-3 center">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'max_book_widgets_init' );
 
@@ -144,7 +154,7 @@ add_action( 'wp_enqueue_scripts', 'max_book_scripts' );
 function add_style_footer() {
 
 	wp_enqueue_style( 'max_book-bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-reboot-grid.min.css' );
-	
+
 	wp_enqueue_style( 'max_book-custom-css', get_template_directory_uri() . '/assets/css/style.css' );
 
 	wp_enqueue_style( 'max_book-owl-css', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.css' );
@@ -183,6 +193,11 @@ require get_template_directory() . '/inc/hooks.php';
 require get_template_directory() . '/inc/classes/index.php';
 
 /**
+ * Widget theme.
+ */
+require get_template_directory() . '/inc/widgets/index.php';
+
+/**
  * Custom function
  */
 require get_template_directory() . '/inc/custom-function.php';
@@ -193,4 +208,3 @@ require get_template_directory() . '/inc/custom-function.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

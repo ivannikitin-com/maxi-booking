@@ -3956,7 +3956,6 @@ textarea:active {
 /*top*/
 .blog-category-top {
   position: relative;
-  background-image: url("../uploads/blog-category/top_bg.jpg");
   background-position: 40% center;
 }
 .blog-category-top:before {
@@ -4001,6 +4000,9 @@ textarea:active {
   object-fit: cover;
   opacity: 0.8;
   transition: all 200ms;
+}
+.blog-category .gray-bg a {
+  color: #000;
 }
 .blog-category-item .img img:hover {
   opacity: 1;

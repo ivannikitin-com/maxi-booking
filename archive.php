@@ -16,6 +16,7 @@ get_header();
 				<?php the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 		</div>
+		<?php the_archive_description(); ?>
 		<main id="main" class="site-main blog-category">
 			<div class="container blog-category-items py35">
 				<div class="row">
@@ -46,6 +47,7 @@ get_header();
 					</div>
 				</div>
 			</div>
+			<?php get_sidebar( 'blog' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
