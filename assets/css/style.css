@@ -3673,9 +3673,6 @@ main.pms .krest > div > div {
 
 /******** PAGE -> ABOUT -> SUGGEST ********/
 /*top*/
-.suggest-top {
-  background-image: url("../uploads/about_about-us/top_bg.jpg");
-}
 .suggest-top .img {
   position: relative;
   width: 100%;
