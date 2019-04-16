@@ -70,16 +70,17 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			echo '<div class="begin py35" style="  background-image: url('. $partner['bg'] .');">';
 		}
 	?>
-	<div class="container">
-		<div class="row beginrow">
-			<div class="col-12">
-				<div class="h2block mb35">
-					<p class="h2 m0a py20">
-						<?php echo $partner['title']; ?>
-					</p>
-				</div>
-				<div class="buttonblock m0a center">
-					<a href="<?php echo $partner['button']['url']; ?>" class="button w100 mw300 upper"><?php echo $partner['button']['title']; ?></a>
+		<div class="container">
+			<div class="row beginrow">
+				<div class="col-12">
+					<div class="h2block mb35">
+						<p class="h2 m0a py20">
+							<?php echo $partner['title']; ?>
+						</p>
+					</div>
+					<div class="buttonblock m0a center">
+						<a href="<?php echo $partner['button']['url']; ?>" class="button w100 mw300 upper"><?php echo $partner['button']['title']; ?></a>
+					</div>
 				</div>
 			</div>
 		</div>
