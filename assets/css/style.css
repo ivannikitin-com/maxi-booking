@@ -3999,9 +3999,6 @@ textarea:active {
   opacity: 0.8;
   transition: all 200ms;
 }
-.blog-category .gray-bg a {
-  color: #000;
-}
 .blog-category-item .img img:hover {
   opacity: 1;
 }

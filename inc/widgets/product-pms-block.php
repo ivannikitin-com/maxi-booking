@@ -12,36 +12,52 @@ class Product_PMS extends WP_Widget {
     );
   }
 
-  public function widget( $args, $instance ) {
-    echo $args['before_widget'];
-    ?>
-      <a href="#">
-        <img src="<?php echo esc_url($instance['image_uri']); ?>" />
-				<p class="h3 pt20">Модуль<br>бронирования</p>
-      </a>
-    <?php
+  public function products_posts() {
+    $args = array(
+      'post_type' => 'products'
+    );
 
-    // Keep this line
-    echo $args['after_widget'];
+    return get_posts( $args );
   }
 
-  public function update( $new_instance, $old_instance ) {
-    $instance = $old_instance;
-    $instance['text'] = strip_tags( $new_instance['text'] );
-    $instance['image_uri'] = strip_tags( $new_instance['image_uri'] );
+  public function widget( $args, $instance ) {
+    $ID = $instance['post_products'];
 
-    return $instance;
+    if ( ! empty( $ID ) ) :
+    echo $args['before_widget'];
+    ?>
+      <a href="<?php echo get_the_permalink( $ID ); ?>">
+        <?php echo get_the_post_thumbnail( $ID ); ?>
+        <p class="h3 pt20"><?php echo get_the_title( $ID ); ?></p>
+      </a>
+    <?php
+    // Keep this line
+    echo $args['after_widget'];
+    endif;
   }
 
   public function form( $instance ) {
+    $productsPosts = $this->products_posts();
     ?>
     <p>
-      <label for="<?= $this->get_field_id( 'image_uri' ); ?>">Image</label>
-      <img class="<?= $this->id ?>_img" src="<?= (!empty($instance['image_uri'])) ? $instance['image_uri'] : ''; ?>" style="margin:0;padding:0;max-width:100%;display:block"/>
-      <input type="text" class="widefat <?= $this->id ?>_url" name="<?= $this->get_field_name( 'image_uri' ); ?>" value="<?= $instance['image_uri']; ?>" style="margin-top:5px;" />
-      <input type="button" id="<?= $this->id ?>" class="button button-primary js_custom_upload_media" value="Upload Image" style="margin-top:5px;" />
+      <label for="<?php echo $this->get_field_id( 'post_products' ); ?>"><?php _e( 'Тип записи', 'max_book' ); ?>:</label><br>
+      <select name="<?php echo $this->get_field_name( 'post_products' ); ?>" id="<?php echo $this->get_field_id( 'post_products' ); ?>" style="width: 100%; display: block;">
+        <option value=""><?php echo esc_html__( 'Выбрать запись', 'max_book' ) ?></option>
+        <?php foreach( $productsPosts as $key => $value ) : ?>
+        <option value="<?php echo $value->ID; ?>" <?php echo $instance['post_products'] == $value->ID ? 'selected' : ''; ?>><?php echo $value->post_title; ?></option>
+        <?php endforeach; ?>
+      </select>
+
     </p>
     <?php
+  }
+
+
+  public function update( $new_instance, $old_instance ) {
+    $instance = $old_instance;
+    $instance['post_products'] = ( ! empty( $new_instance['post_products'] ) ) ? strip_tags( $new_instance['post_products'] ) : '';
+
+    return $instance;
   }
 }
 
@@ -50,10 +66,3 @@ function product_pms_register_widget() {
   register_widget( 'Product_PMS' );
 }
 add_action( 'widgets_init', 'product_pms_register_widget' );
-
-// Enqueue additional admin scripts
-add_action('admin_enqueue_scripts', 'ctup_wdscript');
-function ctup_wdscript() {
-    wp_enqueue_media();
-    wp_enqueue_script('ads_script', get_template_directory_uri() . '/assets/js/widget.js', false, '1.0.0', true);
-}
