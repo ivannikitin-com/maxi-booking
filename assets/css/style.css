@@ -3014,9 +3014,6 @@ main.pms .krest > div > div {
 }
 
 /******** PRODUCTS -> CHANNEL MANAGER ********/
-.channel-manager-top {
-  background-image: url("../uploads/products_channel-manager/top_bg.jpg");
-}
 @media (max-width: 575px) {
   .channel-manager-top .img > .inner {
     display: block;
