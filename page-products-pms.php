@@ -1,8 +1,8 @@
 <?php
 /**
  * Template part for displaying page content in page.php
- * Template Name: Страница "Сайт для отеля"
- * Template Post Type: page
+ * Template Name: Страница "PMS для отеля"
+ * Template Post Type: products
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -54,7 +54,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/page/content', 'products' );
+			get_template_part( 'template-parts/page/content', 'products-pms' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
