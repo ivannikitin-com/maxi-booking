@@ -3224,9 +3224,6 @@ main.pms .krest > div > div {
 }
 
 /******** PRODUCTS -> OPTIMIZED BOOKINGS ********/
-.optimized-bookings-top {
-  background-image: url("../uploads/products_optimized-bookings/top_bg.png");
-}
 @media (min-width: 576px) {
   .optimized-bookings-top .img > .inner.inner-inline div {
     margin-left: 5px;
@@ -3260,14 +3257,12 @@ main.pms .krest > div > div {
   }
 }
 .no-webp .optimized-bookings .okna {
-  background-image: url("../uploads/products_optimized-bookings/oknabg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 }
 .webp .optimized-bookings .okna {
-  background-image: url("../uploads/products_optimized-bookings/oknabg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4090,4 +4085,18 @@ textarea:active {
   width: 12px;
   height: 20px;
   background: url("../images/bright.png") no-repeat;
+}
+#breadcrumbs {
+  font-size: 12px;
+  line-height: 16px;
+}
+#breadcrumbs span,
+#breadcrumbs a {
+  color: #323232;
+}
+#breadcrumbs a {
+  text-decoration: underline;
+}
+#breadcrumbs a:hover {
+  text-decoration: none;
 }
