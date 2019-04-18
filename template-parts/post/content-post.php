@@ -48,3 +48,7 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
   endif;
 
 endif;
+
+do_action( 'page_blog' );
+
+?>

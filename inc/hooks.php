@@ -21,7 +21,7 @@ function max_book_page_blog_related_post() {
     global $post;
 
     // Подборка по tags
-    $related_tax = 'post_tag';
+    $related_tax = 'category';
 
     // Gолучаем ID всех элементов (категорий, меток или таксономий), к которым принадлежит текущий пост
     $cat_tags_or_taxes = wp_get_object_terms( $post->ID, $related_tax, array( 'fields' => 'ids' ) );
@@ -45,26 +45,28 @@ function max_book_page_blog_related_post() {
 
     if ( $query->have_posts() ) :
     ?>
-    <div class="row">
-        <div class="col-12"><hr><h2><?php esc_html_e( 'Popular articles', 'max_book' ); ?></h2></div>
-        <div class="col-12">
-            <div class="popular-widget owl-carousel monserrat">
-                <?php while( $query->have_posts() ) :
-                    $query->the_post();
-                    $ID = $query->post->ID;
-                ?>
-                    <div class="item">
-                        <a href="<?php echo get_permalink( $ID ); ?>" class="image">
-                            <picture>
-                                <?php echo get_the_post_thumbnail( $ID ); ?>
-                            </picture>
-                        </a>
-                        <a class="c-black" href="<?php echo get_permalink( $ID ); ?>"><p><small class="inline"><?php echo get_the_excerpt( $query->post->ID ); ?></small></p></a>
-                    </div>
-                <?php endwhile; ?>
+    <div class="container bottom-widgets mt20">
+        <div class="row">
+            <div class="col-12"><hr><h2><?php esc_html_e( 'Popular articles', 'max_book' ); ?></h2></div>
+            <div class="col-12">
+                <div class="popular-widget owl-carousel monserrat">
+                    <?php while( $query->have_posts() ) :
+                        $query->the_post();
+                        $ID = $query->post->ID;
+                    ?>
+                        <div class="item">
+                            <a href="<?php echo get_permalink( $ID ); ?>" class="image">
+                                <picture>
+                                    <?php echo get_the_post_thumbnail( $ID ); ?>
+                                </picture>
+                            </a>
+                            <p><small class="inline"><?php echo get_the_title( $query->post->ID ); ?></small></p>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
             </div>
         </div>
-	</div>
+    </div>
     <?php
     endif;
 
