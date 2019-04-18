@@ -8,6 +8,11 @@
  */
 
 get_header();
+include_once ABSPATH . 'wp-admin/includes/plugin.php';
+if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
+
+$advanced_field = get_field('advanced_field');
+$alias 	= get_field('alias');
 ?>
 
 	<div id="primary" class="content-area">
@@ -16,8 +21,16 @@ get_header();
 				<?php the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 		</div>
-		<?php the_archive_description(); ?>
-		<main id="main" class="site-main blog-category">
+		<?php
+			if ( $advanced_field['header'] ) :
+				echo $advanced_field['header'];
+			endif;
+
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<div id="breadcrumbs"><div class="container">','</div></div>' );
+			}
+		?>
+		<main id="main" class="site-main <?php echo $alias; ?>">
 			<div class="container blog-category-items py35">
 				<div class="row">
 				<?php if ( have_posts() ) : ?>
@@ -47,9 +60,14 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<?php get_sidebar( 'blog' ); ?>
+			<?php
+				if ( $advanced_field['content'] ) :
+					echo $advanced_field['content'];
+				endif;
+			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
+endif;
 get_footer();

@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 58H18V60H46V58Z" fill="#C4C4C4"/>
+<path d="M16 62L18 58H20V60L18 64H16V62Z" fill="#C4C4C4"/>
+<path d="M48 62L46 58H44V60L46 64H48V62Z" fill="#C4C4C4"/>
+<path d="M64 62L64 64L-8.74229e-08 64L0 62L64 62Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 48H22V60H42V48ZM40 50H24V58H40V50Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H64V50H0V0ZM2 2H62V38H2V2ZM62 40H2V48H62V40Z" fill="#C4C4C4"/>
+<circle cx="32" cy="44" r="2" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 6H18V14H46V6ZM44 8H20V12H44V8Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 16H18V24H46V16ZM44 18H20V22H44V18Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31 26H18V34H31V26ZM29 28H20V32H29V28Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 26H33V34H46V26ZM44 28H35V32H44V28Z" fill="#C4C4C4"/>
+<rect x="38" y="8" width="2" height="4" fill="#C4C4C4"/>
+</svg>

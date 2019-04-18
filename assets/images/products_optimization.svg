@@ -1,0 +1,23 @@
+<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 65H0V63H64V65Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 43H18V64H16V45H4V64H2V43Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 43H40V64H38V45H26V64H24V43Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 43H62V64H60V45H48V64H46V43Z" fill="#C4C4C4"/>
+<path d="M14 54C14 54.5523 13.5523 55 13 55C12.4477 55 12 54.5523 12 54C12 53.4477 12.4477 53 13 53C13.5523 53 14 53.4477 14 54Z" fill="#C4C4C4"/>
+<path d="M36 54C36 54.5523 35.5523 55 35 55C34.4477 55 34 54.5523 34 54C34 53.4477 34.4477 53 35 53C35.5523 53 36 53.4477 36 54Z" fill="#C4C4C4"/>
+<path d="M58 54C58 54.5523 57.5523 55 57 55C56.4477 55 56 54.5523 56 54C56 53.4477 56.4477 53 57 53C57.5523 53 58 53.4477 58 54Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 26H0V24H64V26Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4H18V25H16V6H4V25H2V4Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H40V24H38V6H26V24H24V4Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 4H62V25H60V6H48V25H46V4Z" fill="#C4C4C4"/>
+<path d="M14 15C14 15.5523 13.5523 16 13 16C12.4477 16 12 15.5523 12 15C12 14.4477 12.4477 14 13 14C13.5523 14 14 14.4477 14 15Z" fill="#C4C4C4"/>
+<path d="M36 15C36 15.5523 35.5523 16 35 16C34.4477 16 34 15.5523 34 15C34 14.4477 34.4477 14 35 14C35.5523 14 36 14.4477 36 15Z" fill="#C4C4C4"/>
+<path d="M58 15C58 15.5523 57.5523 16 57 16C56.4477 16 56 15.5523 56 15C56 14.4477 56.4477 14 57 14C57.5523 14 58 14.4477 58 15Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 26H22V24H42V26Z" fill="#C4C4C4"/>
+<path d="M8 0H12V2H8V0Z" fill="#C4C4C4"/>
+<path d="M52 0H56V2H52V0Z" fill="#C4C4C4"/>
+<path d="M30 0H34V2H30V0Z" fill="#C4C4C4"/>
+<path d="M8 39H12V41H8V39Z" fill="#C4C4C4"/>
+<path d="M52 39H56V41H52V39Z" fill="#C4C4C4"/>
+<path d="M30 39H34V41H30V39Z" fill="#C4C4C4"/>
+</svg>
