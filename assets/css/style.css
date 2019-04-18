@@ -134,6 +134,10 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 #navbar nav{ width: 100%; align-self: center; -moz-user-select: none; -khtml-user-select: none; -ms-user-select: none; user-select: none; }
 #navbar li{ margin: 0; }
 
+#navbar nav > ul > li.dropdown {
+	margin-left: 0;
+}
+
 @media (min-width: 992px){
 	body{ padding-top: 84px; }
 	#navbar-container{ position: fixed; width: 100%; top: 0; z-index: 998; }
@@ -190,9 +194,6 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 		box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 		visibility: hidden;
 		transition: visibility 800ms;
-	}
-	#navbar nav > ul > li.dropdown {
-		margin-left: 0;
 	}
 	#navbar nav > ul > li.dropdown:hover > ul{ visibility: visible; }
 	#navbar nav > ul > li > ul > li{
