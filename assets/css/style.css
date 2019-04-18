@@ -191,6 +191,9 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 		visibility: hidden;
 		transition: visibility 800ms;
 	}
+	#navbar nav > ul > li.dropdown {
+		margin-left: 0;
+	}
 	#navbar nav > ul > li.dropdown:hover > ul{ visibility: visible; }
 	#navbar nav > ul > li > ul > li{
 		flex-grow: 1;
