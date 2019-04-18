@@ -181,4 +181,4 @@ function posts_link_attributes_previous() {
     return 'class="previous"';
 }
 
-remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'acf_the_content', 'wpautop' );
