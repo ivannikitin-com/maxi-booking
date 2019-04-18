@@ -22,7 +22,7 @@ $alias 	= get_field('alias', get_option('page_for_posts'));
 	<div id="primary" class="content-area">
 		<div class="section-header">
 			<div class="container">
-				<?php the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h1 class="entry-title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
 			</div>
 		</div>
 		<?php
