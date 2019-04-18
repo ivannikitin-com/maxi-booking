@@ -2237,36 +2237,6 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
 .modul-page .top-modul-carousel .owl-carousel .owl-dots .owl-dot span {
   display: none;
 }
-.no-webp .modul-page .top-modul-carousel .mslide01 {
-  background-image: url("../uploads/products_modul-page/modul-sl-1.jpg");
-}
-.webp .modul-page .top-modul-carousel .mslide01 {
-  background-image: url("../uploads/products_modul-page/modul-sl-1.webp");
-}
-.no-webp .modul-page .top-modul-carousel .mslide02 {
-  background-image: url("../uploads/products_modul-page/modul-sl-2.jpg");
-}
-.webp .modul-page .top-modul-carousel .mslide02 {
-  background-image: url("../uploads/products_modul-page/modul-sl-2.webp");
-}
-.no-webp .modul-page .top-modul-carousel .mslide03 {
-  background-image: url("../uploads/products_modul-page/modul-sl-3.jpg");
-}
-.webp .modul-page .top-modul-carousel .mslide03 {
-  background-image: url("../uploads/products_modul-page/modul-sl-3.webp");
-}
-.no-webp .modul-page .top-modul-carousel .mslide04 {
-  background-image: url("../uploads/products_modul-page/modul-sl-4.jpg");
-}
-.webp .modul-page .top-modul-carousel .mslide04 {
-  background-image: url("../uploads/products_modul-page/modul-sl-4.webp");
-}
-.no-webp .modul-page .top-modul-carousel .mslide05 {
-  background-image: url("../uploads/products_modul-page/modul-sl-5.jpg");
-}
-.webp .modul-page .top-modul-carousel .mslide05 {
-  background-image: url("../uploads/products_modul-page/modul-sl-5.webp");
-}
 @media (max-width: 767px) {
   .modul-page #mbh-form-wrapper {
     text-align: center;
@@ -2560,7 +2530,7 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
 }
 .modul-page .semicircle li {
   font-size: 18px;
-  background: url("../uploads/products_modul-page/round.png") no-repeat;
+  background-repeat: no-repeat;
   padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2586,7 +2556,7 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
   margin-bottom: 7px;
 }
 .modul-page #change-modul .p-input {
-  background: url("../uploads/products_modul-page/modul-arrow.png") no-repeat, #fff;
+  background: url("../images/modul-arrow.png") no-repeat, #fff;
   background-position: right 15px top 15px;
   color: #646464;
   padding: 0px 15px;
@@ -2598,7 +2568,7 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
   background: #fff;
 }
 .modul-page #change-modul .modul-date .p-input {
-  background: url("../uploads/products_modul-page/modul-calendar.png") no-repeat, #fff;
+  background: url("../images/modul-calendar.png") no-repeat, #fff;
   background-position: right 15px top 5px;
 }
 .modul-page #change-modul .inv-field {
@@ -2626,14 +2596,14 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
   display: block;
   height: 47px;
   line-height: 47px;
-  background: url("../uploads/products_modul-page/square.png") no-repeat;
+  background: url("../images/square.png") no-repeat;
   cursor: pointer;
   padding-left: 62px;
 }
 .modul-page #change-btn span.active-btn {
   height: 47px;
   line-height: 47px;
-  background: url("../uploads/products_modul-page/square-activ.png") no-repeat;
+  background: url("../images/square-activ.png") no-repeat;
   cursor: pointer;
 }
 .modul-page #change-modul .child-age {
@@ -2743,24 +2713,6 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
 .modul-page .bottom-modul-carousel .owl-carousel .owl-dots .owl-dot span {
   display: none;
 }
-.no-webp .modul-page .bottom-modul-carousel .mslide01 {
-  background-image: url("../uploads/products_modul-page/bot01.jpg");
-}
-.webp .modul-page .bottom-modul-carousel .mslide01 {
-  background-image: url("../uploads/products_modul-page/bot01.webp");
-}
-.no-webp .modul-page .bottom-modul-carousel .mslide02 {
-  background-image: url("../uploads/products_modul-page/bot02.jpg");
-}
-.webp .modul-page .bottom-modul-carousel .mslide02 {
-  background-image: url("../uploads/products_modul-page/bot02.webp");
-}
-.no-webp .modul-page .bottom-modul-carousel .mslide03 {
-  background-image: url("../uploads/products_modul-page/bot03.jpg");
-}
-.webp .modul-page .bottom-modul-carousel .mslide03 {
-  background-image: url("../uploads/products_modul-page/bot03.webp");
-}
 .modul-page .bottom-modul-carousel .modul-slide {
   display: flex;
 }
@@ -2835,16 +2787,6 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-@media (min-width: 992px) {
-  main.modul-page .page-main-bottom .image {
-    background-image: url("../uploads/main/peoplebg-w1960.jpg");
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  main.modul-page .page-main-bottom .image {
-    background-image: url("../uploads/main/peoplebg-w1174.jpg");
   }
 }
 
