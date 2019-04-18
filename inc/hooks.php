@@ -86,3 +86,33 @@ function add_inline_style_header() {
 }
 
 add_action( 'wp_head', 'add_inline_style_header', 0 );
+
+// Get zone domain and insert in tag body
+add_filter('body_class', function( $classes ) {
+    $siteURL = $_SERVER['SERVER_NAME'];
+
+    $explodeSiteURL = explode( '.', $siteURL );
+    $result = array_pop( $explodeSiteURL );
+
+    switch ($result) {
+        case 'ru':
+            $classes[] = 'ru';
+
+            return $classes;
+            break;
+
+        case 'com':
+            $classes[] = 'en';
+
+            return $classes;
+            break;
+
+        default:
+            return $classes;
+            break;
+    }
+});
+
+function get_zone_domain() {
+
+}
