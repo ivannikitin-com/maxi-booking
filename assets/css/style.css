@@ -1855,10 +1855,12 @@ main.page-main .reviews-carousel .owl-stage .owl-item {
   margin: 20px 0;
   padding-top: 3px;
 }
-.sajt-dlya-otelya .kak-uznayut ul > li:before {
+.sajt-dlya-otelya .kak-uznayut ul > li span {
   content: "";
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   margin-top: -30px;
   left: 0;
@@ -1868,15 +1870,6 @@ main.page-main .reviews-carousel .owl-stage .owl-item {
   background-color: #ff4632;
   background-position: center center;
   background-repeat: no-repeat;
-}
-.sajt-dlya-otelya .kak-uznayut ul > li:nth-child(1):before {
-  background-image: url("../uploads/products_sajt-dlya-otelya/kak-nahodyat-1.png");
-}
-.sajt-dlya-otelya .kak-uznayut ul > li:nth-child(2):before {
-  background-image: url("../uploads/products_sajt-dlya-otelya/kak-nahodyat-2.png");
-}
-.sajt-dlya-otelya .kak-uznayut ul > li:nth-child(3):before {
-  background-image: url("../uploads/products_sajt-dlya-otelya/kak-nahodyat-3.png");
 }
 .sajt-dlya-otelya .kak-uznayut .col-md-6 + .col-md-6 img {
   align-self: center;
@@ -1903,25 +1896,25 @@ main.page-main .reviews-carousel .owl-stage .owl-item {
   position: relative;
 }
 @media (min-width: 768px) {
-  .sajt-dlya-otelya .get-website .container.first > .row:before {
+  .sajt-dlya-otelya .get-website .container.first > .row > .bg {
     content: "";
     position: absolute;
-    background: url("../uploads/products_sajt-dlya-otelya/site_promo.png") no-repeat;
     background-size: contain;
+    background-repeat: no-repeat;
     right: 0;
     top: 161px;
     width: 357px;
     height: 451px;
   }
   @media (min-width: 992px) {
-    .sajt-dlya-otelya .get-website .container.first > .row:before {
+    .sajt-dlya-otelya .get-website .container.first > .row > .bg {
       top: 50px;
       width: 470px;
       height: 594px;
     }
   }
   @media (min-width: 1200px) {
-    .sajt-dlya-otelya .get-website .container.first > .row:before {
+    .sajt-dlya-otelya .get-website .container.first > .row > .bg {
       top: -20px;
       width: 500px;
       height: 632px;
@@ -2084,10 +2077,10 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
   top: 4px;
   width: 13px;
   height: 11px;
-  background: url("../images/create_arr1.png") no-repeat;
+  background: url("../images/create_arr1.png") no-repeat center center;
 }
 .sajt-dlya-otelya .create:hover:before {
-  background: url("../images/create_arr2.png") no-repeat;
+  background: url("../images/create_arr2.png") no-repeat center center;
 }
 .sajt-dlya-otelya .sajt-img2 > .item > .row > .item-img {
   display: flex;
@@ -2140,8 +2133,9 @@ body.ru .sajt-dlya-otelya .templates .template-link:before {
 
 /*komu*/
 .sajt-dlya-otelya .komu {
-  background: url("../uploads/products_sajt-dlya-otelya/komy_bg.jpg") center center no-repeat;
   background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .sajt-dlya-otelya .komu .row > .col-md-6 {

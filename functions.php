@@ -145,7 +145,9 @@ function max_book_scripts() {
 
 	wp_enqueue_script( 'max_book-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true );
 
-	wp_enqueue_script( 'max_book-price-calc', get_template_directory_uri() . '/assets/js/price_calc_common.js', array('jquery'), time(), true );
+	if ( get_page_template_slug() == 'page-price.php' ) :
+		wp_enqueue_script( 'max_book-price-calc', get_template_directory_uri() . '/assets/js/price_calc_common.js', array('jquery'), time(), true );
+	endif;
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
