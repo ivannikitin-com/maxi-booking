@@ -3481,9 +3481,6 @@ main.pms .krest > div > div {
 
 /******** PAGE -> ABOUT -> REVIEWS ********/
 /*top*/
-.reviews-top {
-  background-image: url("../uploads/about_reviews/top_bg.jpg");
-}
 .reviews-top .img {
   position: relative;
   width: 100%;
