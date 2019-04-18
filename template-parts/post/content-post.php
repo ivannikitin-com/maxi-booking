@@ -1,7 +1,4 @@
 <?php
-
-$category_detail=get_the_category($post->ID);
-
 $quote      = get_field('quote');
 $photograph = get_field('photograph');
 $thumb      = get_field('thumb');
@@ -16,9 +13,12 @@ $thumb      = get_field('thumb');
 		  } ?>
 			<div class="category">
         <?php
-          foreach($category_detail as $cd){
-            echo $cd->cat_name;
-          }
+						$posttags = get_the_tags();
+						if ($posttags) {
+							foreach($posttags as $tag) {
+								echo $tag->name . ' ';
+							}
+						}
         ?>
       </div>
 			<?php the_title( '<h1>', '</h1>' ); ?>
