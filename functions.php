@@ -122,8 +122,8 @@ function max_book_widgets_init() {
 		'name'          => esc_html__( 'Пoдвал страницы "Блог"', 'max_book' ),
 		'id'            => 'blog-category-footer',
 		'description'   => esc_html__( 'Add widgets here.', 'max_book' ),
-		'before_widget' => '<div class="col-6 col-md-3 center include">',
-		'after_widget'  => '</div>',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );

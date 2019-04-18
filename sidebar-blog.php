@@ -12,10 +12,4 @@ if ( ! is_active_sidebar( 'blog-category-footer' ) ) {
 }
 ?>
 
-<div class="gray-bg">
-	<div class="container py35">
-		<div class="row">
-			<?php dynamic_sidebar( 'blog-category-footer' ); ?>
-		</div>
-	</div>
-</div>
+<?php dynamic_sidebar( 'blog-category-footer' ); ?>
