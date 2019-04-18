@@ -180,3 +180,5 @@ function posts_link_attributes_next() {
 function posts_link_attributes_previous() {
     return 'class="previous"';
 }
+
+remove_filter( 'the_content', 'wpautop' );
