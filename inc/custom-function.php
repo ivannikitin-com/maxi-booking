@@ -224,7 +224,7 @@ function my_deregister_scripts(){
 
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
-// Подключение css и js Contact Form 7, только на страницах где вставлен shortcode
+// Подключение css и js Contact Form 7, только на указанных страницах
 function my_deregister_javascript(){
 	if( ! is_page ( array( 1266 ) ) ){
 		wp_deregister_script( 'contact-form-7' ); // отключаем скрипты плагина
