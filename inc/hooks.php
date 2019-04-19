@@ -98,7 +98,3 @@ add_filter('body_class', function( $classes ) {
             break;
     }
 });
-
-function get_zone_domain() {
-
-}

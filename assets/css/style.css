@@ -942,35 +942,35 @@ body.ru .sajt-dlya-otelya .templates .template-link:before{ content: 'Перей
 
 
 /******** PRODUCTS -> MODULE ********/
-.modul-page .top-modul-carousel {position:relative;}
-.modul-page .top-modul-carousel .owl-carousel {margin:0; position: absolute; top: 0; z-index: 1; width: 100%;}
-.modul-page .top-modul-carousel .modul-carousel-info .row > div[class*='col-'] {z-index:2;}
-.modul-page .top-modul-carousel .modul-carousel-info {height: 100%; padding: 50px 0; display: flex; align-items:flex-end;}
-.modul-page .top-modul-carousel .modul-carousel-info .row {align-items: flex-end;}
+.top-modul-carousel {position:relative;}
+.top-modul-carousel .owl-carousel {margin:0; position: absolute; top: 0; z-index: 1; width: 100%;}
+.top-modul-carousel .modul-carousel-info .row > div[class*='col-'] {z-index:2;}
+.top-modul-carousel .modul-carousel-info {height: 100%; padding: 50px 0; display: flex; align-items:flex-end;}
+.top-modul-carousel .modul-carousel-info .row {align-items: flex-end;}
 @media (min-width: 768px){
-	.modul-page .top-modul-carousel .modul-carousel-info .row .modul-form {align-self: center; text-align:right;}
+	.top-modul-carousel .modul-carousel-info .row .modul-form {align-self: center; text-align:right;}
 }
-.modul-page .top-modul-carousel .modul-carousel-info .row .try-button a {max-width:320px;}
-.modul-page .top-modul-carousel, .modul-page .top-modul-carousel .owl-carousel, .top-modul-carousel .owl-carousel .modul-slide {height:440px;}
-.modul-page .top-modul-carousel .owl-carousel .owl-dots {position: absolute; width: 100%; bottom: 5px;}
-.modul-page .top-modul-carousel .owl-carousel .owl-dots .owl-dot {overflow: hidden; border-radius: 50%; width: 16px; height: 16px; background-color: rgba(255, 255, 255, 0); box-shadow: inset 0 0 0 2px rgb(255, 255, 255); -webkit-transition: background 0.3s ease; transition: background 0.3s ease; margin: 0 5px; cursor:pointer;}
-.modul-page .top-modul-carousel .owl-carousel .owl-dots .owl-dot:hover, .top-modul-carousel .owl-carousel .owl-dots .owl-dot.active {background-color: rgba(255, 255, 255, 100);}
-.modul-page .top-modul-carousel .owl-carousel .owl-dots .owl-dot span {display:none;}
-.no-webp .modul-page .top-modul-carousel .mslide01{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-1.jpg");}
-.webp .modul-page .top-modul-carousel .mslide01{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-1.webp");}
-.no-webp .modul-page .top-modul-carousel .mslide02{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-2.jpg");}
-.webp .modul-page .top-modul-carousel .mslide02{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-2.webp");}
-.no-webp .modul-page .top-modul-carousel .mslide03{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-3.jpg");}
-.webp .modul-page .top-modul-carousel .mslide03{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-3.webp");}
-.no-webp .modul-page .top-modul-carousel .mslide04{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-4.jpg");}
-.webp .modul-page .top-modul-carousel .mslide04{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-4.webp");}
-.no-webp .modul-page .top-modul-carousel .mslide05{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-5.jpg");}
-.webp .modul-page .top-modul-carousel .mslide05{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-5.webp");}
+.top-modul-carousel .modul-carousel-info .row .try-button a {max-width:320px;}
+.top-modul-carousel, .modul-page .top-modul-carousel .owl-carousel, .top-modul-carousel .owl-carousel .modul-slide {height:440px;}
+.top-modul-carousel .owl-carousel .owl-dots {position: absolute; width: 100%; bottom: 5px;}
+.top-modul-carousel .owl-carousel .owl-dots .owl-dot {overflow: hidden; border-radius: 50%; width: 16px; height: 16px; background-color: rgba(255, 255, 255, 0); box-shadow: inset 0 0 0 2px rgb(255, 255, 255); -webkit-transition: background 0.3s ease; transition: background 0.3s ease; margin: 0 5px; cursor:pointer;}
+.top-modul-carousel .owl-carousel .owl-dots .owl-dot:hover, .top-modul-carousel .owl-carousel .owl-dots .owl-dot.active {background-color: rgba(255, 255, 255, 100);}
+.top-modul-carousel .owl-carousel .owl-dots .owl-dot span {display:none;}
+.no-webp .top-modul-carousel .mslide01{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-1.jpg");}
+.webp .top-modul-carousel .mslide01{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-1.webp");}
+.no-webp .top-modul-carousel .mslide02{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-2.jpg");}
+.webp .top-modul-carousel .mslide02{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-2.webp");}
+.no-webp .top-modul-carousel .mslide03{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-3.jpg");}
+.webp .top-modul-carousel .mslide03{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-3.webp");}
+.no-webp .top-modul-carousel .mslide04{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-4.jpg");}
+.webp .top-modul-carousel .mslide04{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-4.webp");}
+.no-webp .top-modul-carousel .mslide05{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-5.jpg");}
+.webp .top-modul-carousel .mslide05{background-image: url("/wp-content/uploads/products_modul-page/modul-sl-5.webp");}
 @media (max-width: 767px){
-	.modul-page #mbh-form-wrapper {text-align:center;}
-	.modul-page .top-modul-carousel .modul-carousel-info .row .modul-form {order:1;}
-	.modul-page .top-modul-carousel .modul-carousel-info .row .try-button {order:2;}
-	.modul-page .top-modul-carousel .modul-carousel-info {padding: 0 0 50px 0;}
+	.top-modul-carousel #mbh-form-wrapper {text-align:center;}
+	.top-modul-carousel .modul-carousel-info .row .modul-form {order:1;}
+	.top-modul-carousel .modul-carousel-info .row .try-button {order:2;}
+	.top-modul-carousel .modul-carousel-info {padding: 0 0 50px 0;}
 }
 .modul-page .chart .bar{display: inline-block; vertical-align: top; background: #c3ebff; height: 230px; width: 9%;-webkit-transition: all 1s ease-in-out 0s; -o-transition: all 1s ease-in-out 0s; transition: all 1s ease-in-out 0s;}
 .modul-page .chart{ position: relative; border-left: 1px dashed #ababab; border-bottom: 1px dashed #ababab; margin: 50px auto; padding: 0; padding-left: 35px;}
@@ -1089,7 +1089,6 @@ body.ru .sajt-dlya-otelya .templates .template-link:before{ content: 'Перей
 @media (min-width: 768px){ main.modul-page .page-main-bottom .image{ height: 260px; background-position: center center; background-repeat: no-repeat; background-size: cover; }}
 @media (min-width: 992px){ main.modul-page .page-main-bottom .image{ background-image: url('/wp-content/uploads/main/peoplebg-w1960.jpg'); } }
 @media (min-width: 768px) and (max-width: 991px){ main.modul-page .page-main-bottom .image{ background-image: url('/wp-content/uploads/main/peoplebg-w1174.jpg'); } }
-
 
 
 
