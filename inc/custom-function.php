@@ -224,18 +224,12 @@ function my_deregister_scripts(){
 
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
-// Подключение css и js Contact Form 7, только на страницах где вставлен shortcode
-// function wpcf7_remove_assets() {
-// 	add_filter( 'wpcf7_load_js', '__return_false' );
-// 	add_filter( 'wpcf7_load_css', '__return_false' );
-// }
+// Подключение css и js Contact Form 7, только на указанных страницах
+function my_deregister_javascript(){
+	if( ! is_page ( array( 1266 ) ) ){
+		wp_deregister_script( 'contact-form-7' ); // отключаем скрипты плагина
+		wp_deregister_style( 'contact-form-7' ); // отключаем стили плагина
+	}
+}
 
-// add_action( 'wpcf7_init', 'wpcf7_remove_assets' );
-
-// function wpcf7_add_assets( $atts ) {
-// 	wpcf7_enqueue_styles();
-
-// 	return $atts;
-// }
-
-// add_filter( 'shortcode_atts_wpcf7', 'wpcf7_add_assets' );
+add_action('wp_print_styles', 'my_deregister_javascript', 100 );
