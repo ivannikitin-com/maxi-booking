@@ -6,6 +6,9 @@ jQuery(function($) {
 		else $(this).addClass("active");
 	});
 
+	//add avtive for blog
+	$('#navbar nav > ul > li > ul > li.active').parent().parent().addClass('active');
+
 	//cancel href for dropdown links
 	$("#menu .dropdown > a").click(function() {
 		return false;
@@ -51,6 +54,21 @@ jQuery(function($) {
 		});
 
 	//***** MAIN PAGE
+	//main carousel
+	var mainowl = $('.main-carousel.owl-carousel');
+	mainowl.owlCarousel({
+		margin: 10,
+		center: true,
+		loop: true,
+		nav: false,
+		dots: true,
+		responsive: { 0: { items: 1 }, }
+	});
+	mainowl.on('changed.owl.carousel', function (event) {
+		$('.page-main-slider .nav-car-ul > li').removeClass('active');
+		$('.page-main-slider .nav-car-ul > li:nth-child(' + (event.page.index + 1) + ')').addClass('active');
+	})
+	
 	//clients carousel
 	$(".clients-carousel.owl-carousel").owlCarousel({
 		margin: 30,
