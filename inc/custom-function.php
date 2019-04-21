@@ -233,3 +233,7 @@ function my_deregister_javascript(){
 }
 
 add_action('wp_print_styles', 'my_deregister_javascript', 100 );
+
+// Remove p br in "the_content"
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
