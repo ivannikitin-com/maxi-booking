@@ -44,8 +44,8 @@
 							<?php if ( get_theme_mod( 'twitter' ) ) : ?>
 								<a href="<?php echo get_theme_mod( 'twitter' ); ?>" target="_blank" rel="nofollow" title="Мы в twitter"><img src="<?php bloginfo("template_url"); ?>/assets/images/social/twitter_f.png" alt="Мы в twitter"></a>
 							<?php endif; ?>
-							<?php if ( get_theme_mod( 'google' ) ) : ?>
-								<a href="<?php echo get_theme_mod( 'google' ); ?>" rel="nofollow" target="_blank" title="Мы в Google+"><img src="<?php bloginfo("template_url"); ?>/assets/images/social/google_f.png" alt="Мы в Google+"></a>
+							<?php if ( get_theme_mod( 'instagram' ) ) : ?>
+								<a href="<?php echo get_theme_mod( 'instagram' ); ?>" rel="nofollow" target="_blank" title="Мы в Instagram"><img src="<?php bloginfo("template_url"); ?>/assets/images/social/instagram_f.png" alt="Мы в Instagram"></a>
 							<?php endif; ?>
 						</div>
 					</div>

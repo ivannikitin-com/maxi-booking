@@ -147,13 +147,13 @@ add_action('customize_register', function($customizer) {
 			)
 	);
 
-	$customizer->add_setting( 'google', array(
+	$customizer->add_setting( 'instagram', array(
 		'default' => ''
 	) );
 	$customizer->add_control(
-			'google',
+			'instagram',
 			array(
-					'label'     => __('Google', 'max_book'),
+					'label'     => __('Instagram', 'max_book'),
 					'section'   => 'settings-site',
 					'type'      => 'text',
 			)

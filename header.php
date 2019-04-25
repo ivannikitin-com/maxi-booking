@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+	<style>#navbar nav > ul > li > ul{visibility: hidden;}</style>
 	<header id="navbar-container">
 		<div class="container" id="navbar">
 			<a href="<?php echo esc_url( home_url() ); ?>" id="logo">

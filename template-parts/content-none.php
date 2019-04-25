@@ -9,7 +9,9 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found container">
+<div class="row">
+<div class="col-12 pb60">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'max_book' ); ?></h1>
 	</header><!-- .page-header -->
@@ -48,4 +50,9 @@
 		endif;
 		?>
 	</div><!-- .page-content -->
+
+
+
+</div>
+</div>
 </section><!-- .no-results -->

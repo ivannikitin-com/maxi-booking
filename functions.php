@@ -137,6 +137,9 @@ function max_book_scripts() {
 	// Style
 
 	// Scripts
+    wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'max_book-owl-js', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.js', array('jquery'), time(), true );
 
