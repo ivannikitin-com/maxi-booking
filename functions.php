@@ -127,6 +127,16 @@ function max_book_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Общий подвал', 'max_book' ),
+		'id'            => 'footer',
+		'description'   => esc_html__( 'Add widgets here.', 'max_book' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'max_book_widgets_init' );
 
@@ -152,7 +162,7 @@ function max_book_scripts() {
 	wp_enqueue_script( 'max_book-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true );
 
 	//wp_enqueue_script( 'max_book-price-calc', get_template_directory_uri() . '/assets/js/price_calc_common.js', array('jquery'), time(), true );
-	
+
     wp_enqueue_script( 'max_book_search_result', '//online-demo.maxi-booking.ru/management/online/api/file/591ef58cd2122b21674826b2/load-result', array(), time(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

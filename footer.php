@@ -106,6 +106,8 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+	<!-- Widget Footer -->
+	<?php get_sidebar( 'footer' ); ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
