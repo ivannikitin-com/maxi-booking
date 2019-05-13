@@ -26,8 +26,10 @@
 	<header id="navbar-container">
 		<div class="container" id="navbar">
 			<a href="<?php echo esc_url( home_url() ); ?>" id="logo">
+				<img src="/wp-content/themes/maxi-booking/assets/images/logo_img.svg" class="footer-logo" itemprop="logo" alt="maxibooking logo">
+				<img src="/wp-content/themes/maxi-booking/assets/images/logo_slogan.svg" class="footer-logo" alt="maxibooking logo text">
 				<?php 
-				$logo_img = '';
+				/*$logo_img = '';
 				if( $custom_logo_id = get_theme_mod( 'custom_logo' ) ){
 					$logo_img = wp_get_attachment_image( $custom_logo_id, 'full', false, array(
 						'class'    => 'footer-logo',
@@ -38,7 +40,7 @@
 						$logo_img .= '<img src="' . $custom_logo_id_slogan . '" alt="maxibooking logo" class="footer-logo">';
 					}
 				}
-				echo $logo_img;
+				echo $logo_img;*/
 				?>
 			</a>
 			<div id="menu-trigger"></div>

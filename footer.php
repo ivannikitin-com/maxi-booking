@@ -19,12 +19,8 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-4">
 						<div class="footer-logo">
-							<?php if ( get_theme_mod( 'footer_image_1' ) ) : ?>
-								<img src="<?php echo get_theme_mod( 'footer_image_1' ); ?>" alt="maxibooking logo">
-							<?php endif; ?>
-							<?php if ( get_theme_mod( 'slogan' ) ) : ?>
-								<img src="<?php echo get_theme_mod( 'slogan' ); ?>" alt="maxibooking logo">
-							<?php endif; ?>
+							<img src="/wp-content/themes/maxi-booking/assets/images/logo_footer.svg" class="footer-logo" itemprop="logo" alt="maxibooking logo">
+							<img src="/wp-content/themes/maxi-booking/assets/images/logo_slogan.svg" class="footer-logo" alt="maxibooking logo text">
 						</div>
 
 						<div class="footer-copyright"><?php echo get_theme_mod( 'copyright' ); ?></div>
@@ -52,7 +48,7 @@
 					<div class="col-sm-12 col-md-3 footer-email">
 						<?php
 						if ( get_theme_mod( 'email' ) ) :
-							printf( esc_html__( 'E-mail: %1$s', 'max_book' ), '<a href="' . get_theme_mod( 'email' ) . '" class="inline">' . get_theme_mod( 'email' ) . '</a>' );
+							printf( esc_html__( 'E-mail: %1$s', 'max_book' ), '<a href="mailto:' . get_theme_mod( 'email' ) . '" class="inline">' . get_theme_mod( 'email' ) . '</a>' );
 						endif;
 						?>
 						<span> </span>
@@ -95,9 +91,7 @@
 						?>
 					</div>
 					<div class="col-sm-6 col-md-3 footer-dss">
-						<?php if ( get_theme_mod( 'standart_image' ) ) : ?>
-							<img src="<?php echo get_theme_mod( 'standart_image' ); ?>" alt="Стандарт PCI-DSS">
-						<?php endif; ?>
+						<img src="/wp-content/themes/maxi-booking/assets/images/ssl.png" alt="Стандарт PCI-DSS">
 						<?php
 							wp_nav_menu( array(
 								'theme_location' 	=> 'footer-links',

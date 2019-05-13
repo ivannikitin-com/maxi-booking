@@ -26,9 +26,9 @@ h4, .h4{ font-family: 'Open Sans', sans-serif; font-size: 18px; line-height: 22p
 ul, li, ol{ list-style-type: none; margin: 0; padding: 0; }
 ol{ padding-left: 1.15em; margin-bottom: 25px; }
 li{ margin-bottom: 10px; }
-ol li{ list-style-type: decimal; padding-left: 0.3em; }
 ul.disc, ul.disc li{ list-style-type: disc; }
 ul.disc{ margin-left: 7px; padding-left: inherit; }
+ul.disc ol > li, ol > li{ list-style-type: decimal; padding-left: 0.3em; }
 
 img{ max-width: 100%; height: auto; }
 hr{ border: 0; border-top: solid 1px #bdbdbd; }
@@ -126,6 +126,12 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 	body .owl-carousel.nav .owl-nav > button.owl-next{ right: 0; }
 }
 
+/*tables*/
+.content table td, .content table th{
+	border: 1px solid #999;
+	padding: 4px 8px;
+}
+.content table th{ text-align: center; }
 
 
 
@@ -558,6 +564,7 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 	color: #000000;
 }
 .blog-post h2{ margin: 1.875em 0 0.56em 0; }
+.blog-post h3{ font-size: 18px; }
 .blog-post small{
 	font-size: 12px;
 	line-height: 18px;
@@ -630,6 +637,9 @@ body .owl-carousel .owl-dots .owl-dot.active span, body .owl-carousel .owl-dots 
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
+}
+.blog-post .products-widget a, .blog-post .products-widget a:hover{
+	color: #000;
 }
 @media (max-width: 575px){
 	.blog-post .products-widget > div{
@@ -1260,17 +1270,15 @@ main.pms .krest > div > div{
 /******** PRODUCTS ********/
 .no-webp .produkty-top {background-image: url("/wp-content/uploads/produkty/prodbg.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center;}
 .webp .produkty-top {background-image: url("/wp-content/uploads/produkty/prodbg.webp");background-size: cover; background-repeat: no-repeat; background-position: center center;}
-.produkty .prodblock {padding: 30px; border: 1px solid #646464}
+.produkty .prodblock { width: 100%; padding: 30px; border: 1px solid #646464}
 .produkty .prodimage {position: absolute; top: -50px; border: 6px solid #ffffff; border-radius: 100px;}
 .produkty .prodmore {position: absolute; right: 45px; bottom: 0; margin-bottom:35px;}
 .produkty .prodmore a {color: #646464; text-decoration: underline;}
 .produkty .prodmore a:hover {text-decoration: none;}
 .produkty .col-12 {display:flex;}
 .produkty .prodblock ul {padding-bottom:35px;}
-@media (max-width: 767px){
-	.produkty .prodimage {width:80px; top: -30px;}
-	.produkty > .container > .row > .col-12:nth-child(2) {margin-top:35px;}
-}
+@media (max-width: 767px){ .produkty .prodimage {width:80px; top: -30px;} }
+@media (max-width: 575px){ .produkty > .container > .row > .col-12:nth-child(2) {margin-top:35px;} }
 
 
 /******** PAGE -> PRICES ********/
@@ -1574,6 +1582,10 @@ body.page-id-1257 .section-header{ background: #73c3f5; color: #fff; }
 
 /******** PAGE -> DOGOVOR,  PAGE -> PERS DANNIE ********/
 body.page-id-1371, body.page-id-1372, body.page-id-1371 .section-header, body.page-id-1372 .section-header{ background: #c3ebff; }
+
+
+
+/******** SEARCH ********/
 /*search form*/
 .site-content .search_f{ padding: 35px 0; min-height: 30px; width: 250px; margin: 0 auto; }
 .site-content .search_f .i-search_f{ padding: 10px; border: 1px solid #999; }

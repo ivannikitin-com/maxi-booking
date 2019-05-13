@@ -137,17 +137,23 @@ function max_book_scripts() {
 	// Style
 
 	// Scripts
-    wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.0.min.js');
+	//wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
 	wp_enqueue_script( 'jquery' );
+
+	wp_register_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js');
+	wp_enqueue_script( 'max_book-moderniz-webp' );
 
 	wp_enqueue_script( 'max_book-owl-js', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.js', array('jquery'), time(), true );
 
-	wp_enqueue_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js', array(), time(), true );
+	//wp_enqueue_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js', array(), time(), true );
 
 	wp_enqueue_script( 'max_book-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true );
 
-	wp_enqueue_script( 'max_book-price-calc', get_template_directory_uri() . '/assets/js/price_calc_common.js', array('jquery'), time(), true );
+	//wp_enqueue_script( 'max_book-price-calc', get_template_directory_uri() . '/assets/js/price_calc_common.js', array('jquery'), time(), true );
+	
+    wp_enqueue_script( 'max_book_search_result', '//online-demo.maxi-booking.ru/management/online/api/file/591ef58cd2122b21674826b2/load-result', array(), time(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

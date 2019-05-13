@@ -52,31 +52,30 @@ get_header();
 				<div class="row include mt35">
 					<div class="col-md-3 center mb20">
 						<a href="/produkty/modul-onlajn-bronirovaniya/">
-							<img src="/wp-content/uploads/products_pms/icon_incl_mb.png">
-							<p class="h3 mt20">Модуль бронирования</p>
+							<img src="/wp-content/uploads/products_pms/icon_incl_mb.png" alt="Модуль бронирования">
+							<p class="h3 pt20">Модуль<br>бронирования</p>
 						</a>
 					</div>
 					<div class="col-md-3 center mb20">
 						<a href="/produkty/channel-manager/">
-							<img src="/wp-content/uploads/products_pms/icon_incl_ch.png">
-							<p class="h3 mt20">Менеджеров каналов</p>
+							<img src="/wp-content/uploads/products_pms/icon_incl_ch.png" alt="Менеджер каналов">
+							<p class="h3 pt20">Менеджер<br>каналов</p>
 						</a>
 					</div>
 					<div class="col-md-3 center mb20">
 						<a href="/produkty/pms-dlya-otelya/">
-							<img src="/wp-content/uploads/products_pms/icon_incl_cl.png">
-							<p class="h3 mt20">PMS для отеля</p>
+							<img src="/wp-content/uploads/products_pms/icon_incl_cl.png" alt="PMS для отеля">
+							<p class="h3 pt20">PMS<br>для отеля</p>
 						</a>
 					</div>
 					<div class="col-md-3 center mb20">
 						<a href="/produkty/sajt-dlya-otelya/">
-							<img src="/wp-content/uploads/products_pms/icon_incl_cs.png">
-							<p class="h3 mt20">Готовый сайт для отеля</p>
+							<img src="/wp-content/uploads/products_pms/icon_incl_cs.png" alt="Сайт для отеля">
+							<p class="h3 pt20">Готовый сайт<br>для отеля</p>
 						</a>
 					</div>
 				</div>
 			</div>
-
 
 			<div class="blue-bg py80 tryfree">
 				<div class="container">

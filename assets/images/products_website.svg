@@ -1,0 +1,28 @@
+<svg width="111" height="64" viewBox="0 0 111 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 58H18V60H46V58Z" fill="#C4C4C4"/>
+<path d="M16 62L18 58H20V60L18 64H16V62Z" fill="#C4C4C4"/>
+<path d="M48 62L46 58H44V60L46 64H48V62Z" fill="#C4C4C4"/>
+<path d="M111 62L111 64L-8.7423e-08 64L0 62L111 62Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 48H22V60H42V48ZM40 50H24V58H40V50Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H64V50H0V0ZM2 2H62V38H2V2ZM62 40H2V48H62V40Z" fill="#C4C4C4"/>
+<circle cx="32" cy="44" r="2" fill="#C4C4C4"/>
+<circle cx="89" cy="57" r="2" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57 14H7V22H57V14ZM55 16H9V20H55V16Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100 25H77V64H100V25ZM98 27H79V62H98V27Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 25H7V33H21V25ZM19 27H9V31H19V27Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39 25H25V33H39V25ZM37 27H27V31H37V27Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57 25H43V33H57V25ZM55 27H45V31H55V27Z" fill="#C4C4C4"/>
+<rect x="21" y="4" width="2" height="14" transform="rotate(90 21 4)" fill="#C4C4C4"/>
+<rect x="91" y="30" width="2" height="9" transform="rotate(90 91 30)" fill="#C4C4C4"/>
+<rect x="95" y="37" width="2" height="13" transform="rotate(90 95 37)" fill="#C4C4C4"/>
+<rect x="95" y="41" width="2" height="13" transform="rotate(90 95 41)" fill="#C4C4C4"/>
+<rect x="95" y="45" width="2" height="13" transform="rotate(90 95 45)" fill="#C4C4C4"/>
+<rect x="95" y="49" width="2" height="13" transform="rotate(90 95 49)" fill="#C4C4C4"/>
+<rect x="37" y="4" width="2" height="3" transform="rotate(90 37 4)" fill="#C4C4C4"/>
+<rect x="42" y="4" width="2" height="3" transform="rotate(90 42 4)" fill="#C4C4C4"/>
+<rect x="47" y="4" width="2" height="3" transform="rotate(90 47 4)" fill="#C4C4C4"/>
+<rect x="52" y="4" width="2" height="3" transform="rotate(90 52 4)" fill="#C4C4C4"/>
+<rect x="57" y="4" width="2" height="3" transform="rotate(90 57 4)" fill="#C4C4C4"/>
+<rect x="95" y="30" width="2" height="2" transform="rotate(90 95 30)" fill="#C4C4C4"/>
+<rect x="62" y="8" width="2" height="60" transform="rotate(90 62 8)" fill="#C4C4C4"/>
+</svg>

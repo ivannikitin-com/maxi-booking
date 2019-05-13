@@ -72,7 +72,6 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 	</div>
 	<div class="container">
 			<picture>
-				<source type="image/webp" srcset="/wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-575w.webp 575w, /wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-768w.webp 768w, /wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-953w.webp 953w" />
 				<source type="image/png" srcset="/wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-575w.png 575w, /wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-768w.png 768w, /wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-953w.png 953w" />
 				<img sizes="(max-width: 991px) 575px, (max-width: 1199px) 768px, 953px" src="/wp-content/themes/maxi-booking/assets/images/notebook-right/notebook_img-575w.png" alt="" />
 			</picture>
@@ -82,24 +81,32 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 <div class="container bottom-widgets mt20">
 	<div class="row products-widget">
 		<div class="col-sm-6 col-lg-3">
-			<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_channel-manager.svg" alt=""></div>
-			<h4>Менеджеров каналов</h4>
+			<a href="/produkty/sajt-dlya-otelya/">
+				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_website.svg" alt=""></div>
+				<h4>Сайт для отеля</h4>
+			</a>
+			<p><small class="inline">Готов сразу после регистрации в системе MaxiBooking</small></p>
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<a href="/produkty/channel-manager/">
+				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_channel-manager.svg" alt=""></div>
+				<h4>Менеджеров каналов</h4>
+			</a>
 			<p><small class="inline">Channel Manager Максибукинг – инструмент, позволяющий одновременно управлять всеми необходимыми вам каналами продаж</small></p>
 		</div>
 		<div class="col-sm-6 col-lg-3">
-			<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_module.svg" alt=""></div>
-			<h4>Модуль бронирования</h4>
+			<a href="/produkty/modul-onlajn-bronirovaniya/">
+				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_module.svg" alt=""></div>
+				<h4>Модуль бронирования</h4>
+			</a>
 			<p><small class="inline">Увеличивает прямые продажи вашего отеля, подходит для любого сайта и работает без комиссии</small></p>
 		</div>
 		<div class="col-sm-6 col-lg-3">
-			<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_pms.svg" alt=""></div>
-			<h4>PMS</h4>
+			<a href="/produkty/pms-dlya-otelya/">
+				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_pms.svg" alt=""></div>
+				<h4>PMS</h4>
+			</a>
 			<p><small class="inline">Cистема для комплексного управления процессами в гостинице или отеле</small></p>
-		</div>
-		<div class="col-sm-6 col-lg-3">
-			<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_optimization.svg" alt=""></div>
-			<h4>Оптимизация бронирования</h4>
-			<p><small class="inline">Эксклюзивный модуль «Оптимизация размещения» позволяет настроить функционал оптимальных продаж</small></p>
 		</div>
 	</div>
 </div>
