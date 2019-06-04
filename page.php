@@ -30,6 +30,7 @@ $header = $advanced_field['header'];
 		</div>
 
 		<?php
+		if( is_page('test') ) get_template_part( 'test_header' ); 
 		if ( $advanced_field['header'] ) :
 			echo $advanced_field['header'];
 		endif;
@@ -44,8 +45,11 @@ $header = $advanced_field['header'];
 		while ( have_posts() ) :
 			the_post();
 
+			if( is_page('test') ) get_template_part( 'test_content' ); 
 			get_template_part( 'template-parts/page/content', 'page' );
 
+
+			
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();

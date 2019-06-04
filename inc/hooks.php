@@ -6,7 +6,7 @@ function max_book_add_footer_custom() {
     <script async>
         jQuery(document).ready(function () {
             <?php if ( ! is_front_page() ) : ?>
-            jQuery("#postload").append('<link href="<?php bloginfo("template_url"); ?>/assets/css/blog-fonts.css" rel="stylesheet preload" type="text/css" as="style" />'); //@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Montserrat:500,600&subset=cyrillic');
+            jQuery("#postload").append(`<link href="<?php bloginfo("template_url"); ?>/assets/css/blog-fonts.css" rel="stylesheet preload" type="text/css" as="style" />`);
             <?php endif; ?>
             jQuery("#postload-style").append("@font-face{ font-family: 'VaccineSansWebRegular';font-display: swap; src: url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.eot'); src: url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.eot?#iefix') format('embedded-opentype'), url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.woff2') format('woff2'), url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.woff') format('woff'), url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.ttf') format('truetype'), url('<?php bloginfo("template_url"); ?>/assets/fonts/VCS55__W.svg#VaccineSansWeb-Regular') format('svg'); font-weight: normal; font-style: normal; }");
         });
@@ -53,12 +53,12 @@ function max_book_page_blog_related_post() {
                         $ID = $query->post->ID;
                     ?>
                         <div class="item">
-                            <a href="<?php echo get_permalink( $ID ); ?>" class="image">
+                            <a href="<?php echo get_permalink( $ID ); ?>">
                                 <picture>
                                     <?php echo get_the_post_thumbnail( $ID ); ?>
                                 </picture>
+                                <p><small class="inline"><?php echo get_the_title( $query->post->ID ); ?></small></p>
                             </a>
-                            <p><small class="inline"><?php echo get_the_title( $query->post->ID ); ?></small></p>
                         </div>
                     <?php endwhile; ?>
                 </div>

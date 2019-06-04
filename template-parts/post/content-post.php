@@ -84,29 +84,29 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 			<a href="/produkty/sajt-dlya-otelya/">
 				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_website.svg" alt=""></div>
 				<h4>Сайт для отеля</h4>
+				<p><small class="inline">Готов сразу после регистрации в системе MaxiBooking</small></p>
 			</a>
-			<p><small class="inline">Готов сразу после регистрации в системе MaxiBooking</small></p>
 		</div>
 		<div class="col-sm-6 col-lg-3">
 			<a href="/produkty/channel-manager/">
 				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_channel-manager.svg" alt=""></div>
 				<h4>Менеджеров каналов</h4>
+				<p><small class="inline">Channel Manager Максибукинг – инструмент, позволяющий одновременно управлять всеми необходимыми вам каналами продаж</small></p>
 			</a>
-			<p><small class="inline">Channel Manager Максибукинг – инструмент, позволяющий одновременно управлять всеми необходимыми вам каналами продаж</small></p>
 		</div>
 		<div class="col-sm-6 col-lg-3">
 			<a href="/produkty/modul-onlajn-bronirovaniya/">
 				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_module.svg" alt=""></div>
 				<h4>Модуль бронирования</h4>
+				<p><small class="inline">Увеличивает прямые продажи вашего отеля, подходит для любого сайта и работает без комиссии</small></p>
 			</a>
-			<p><small class="inline">Увеличивает прямые продажи вашего отеля, подходит для любого сайта и работает без комиссии</small></p>
 		</div>
 		<div class="col-sm-6 col-lg-3">
 			<a href="/produkty/pms-dlya-otelya/">
 				<div class="image"><img src="/wp-content/themes/maxi-booking/assets/images/products_pms.svg" alt=""></div>
 				<h4>PMS</h4>
+				<p><small class="inline">Cистема для комплексного управления процессами в гостинице или отеле</small></p>
 			</a>
-			<p><small class="inline">Cистема для комплексного управления процессами в гостинице или отеле</small></p>
 		</div>
 	</div>
 </div>
@@ -114,6 +114,18 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) :
 
 
 
+<script>
+//share
+jQuery(function($) {
+	sh_url = window.location.href;
+	sh_title = $('h1').text();
+	sh_desc = $('head > meta[name="description"]').attr('content');
+	sh_img = $('.blog-post-top .image').css('background-image');
+	$('a.share-vk').attr('href', 'https://vk.com/share.php?url='+sh_url+'&title='+sh_title+'&description='+sh_desc+'&image='+sh_img);
+	$('a.share-fb').attr('href', 'https://www.facebook.com/sharer.php?u='+sh_url+'&t='+sh_title);
+	$('a.share-tw').attr('href', 'https://twitter.com/intent/tweet?url='+sh_url+'&text='+sh_title);
+});
+</script>
 
 
 <?php

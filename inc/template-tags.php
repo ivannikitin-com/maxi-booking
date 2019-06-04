@@ -132,7 +132,7 @@ if ( ! function_exists( 'max_book_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+		<?php if(0): ?><a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1"><?php endif; ?>
 			<?php
 			the_post_thumbnail( 'post-thumbnail', array(
 				'alt' => the_title_attribute( array(
@@ -140,7 +140,7 @@ if ( ! function_exists( 'max_book_post_thumbnail' ) ) :
 				) ),
 			) );
 			?>
-		</a>
+		<?php if(0): ?></a><?php endif; ?>
 
 		<?php
 		endif; // End is_singular().

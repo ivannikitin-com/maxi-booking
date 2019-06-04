@@ -10,30 +10,19 @@ jQuery(function($) {
 	$('#navbar nav > ul > li > ul > li.active').parent().parent().addClass('active');
 
 	//cancel href for dropdown links
-	$("#menu .dropdown > a").click(function() {
-		return false;
-	});
+	$("#menu .dropdown.menu-item-18 > a").click(function(){ return false; });
 
 	//dropdown for mobile
+	$("#menu .dropdown").prepend('<span class="arrow"></span>');
 	$("#menu .dropdown > a, #menu .dropdown > span").click(function() {
-		if (
-			$(this)
-				.parent()
-				.hasClass("open")
-		)
-			$(this)
-				.parent()
-				.removeClass("open");
+		if ($(this).parent().hasClass("active"))
+			$(this).parent().removeClass("active");
 		else {
-			$(this)
-				.closest("ul")
-				.find("li.open")
-				.removeClass("open");
-			$(this)
-				.parent()
-				.addClass("open");
+			$(this).closest("ul").find("li.active").removeClass("active");
+			$(this).parent().addClass("active");
 		}
 	});
+
 
 	//***** BLOG PAGE
 	//blog carousel

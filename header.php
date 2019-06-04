@@ -16,11 +16,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
+	<script type='text/javascript' src='https://maxi-booking.com/wp-content/themes/maxi-booking/assets/js/modernizr-webp.js'></script>
 </head>
 
 <body <?php body_class(); ?>>
+<script>Modernizr.on('webp', function (result) { if (result) document.body.className += ' webp'; else document.body.className += ' no-webp'; });</script>
+
+
+
 <div id="page" class="site">
 	<style>#navbar nav > ul > li > ul{visibility: hidden;}</style>
 	<header id="navbar-container">

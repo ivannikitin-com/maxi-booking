@@ -48,6 +48,7 @@ if ( ! function_exists( 'max_book_setup' ) ) :
 			'service'	=> esc_html__( 'Footer 1-st column', 'max_book' ),
 			'info'	=> esc_html__( 'Footer 2-st column', 'max_book' ),
 			'about'	=> esc_html__( 'Footer 3-st column', 'max_book' ),
+			'links'	=> esc_html__( 'Footer 4-st column', 'max_book' ),
 			'footer-links'	=> esc_html__( 'Footer links', 'max_book' ),
 		) );
 
@@ -152,8 +153,8 @@ function max_book_scripts() {
 	//wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
 	wp_enqueue_script( 'jquery' );
 
-	wp_register_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js');
-	wp_enqueue_script( 'max_book-moderniz-webp' );
+	//wp_register_script( 'max_book-moderniz-webp', get_template_directory_uri() . '/assets/js/modernizr-webp.js');
+	//wp_enqueue_script( 'max_book-moderniz-webp' );
 
 	wp_enqueue_script( 'max_book-owl-js', get_template_directory_uri() . '/assets/js/owl/owl.carousel.min.js', array('jquery'), time(), true );
 

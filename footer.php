@@ -90,7 +90,17 @@
 							) );
 						?>
 					</div>
-					<div class="col-sm-6 col-md-3 footer-dss">
+					<div class="col-sm-6 col-md-3 footer-menu-blog">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' 	=> 'links',
+								'container'      	=> 'ul',
+								'container_class'	=> 'menu',
+								'depth'				=> 0,
+							) );
+						?>
+					</div>
+					<div class="col-12 footer-dss">
 						<img src="/wp-content/themes/maxi-booking/assets/images/ssl.png" alt="Стандарт PCI-DSS">
 						<?php
 							wp_nav_menu( array(

@@ -8,13 +8,14 @@
  */
 
 ?>
+
 <div class="col-sm-6 col-lg-4">
-	<div class="blog-category-item">
+	<a class="blog-category-item" href="<?php the_permalink(); ?>">
 		<div class="img"><?php max_book_post_thumbnail(); ?></div>
 		<div class="info">
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<h3><?php the_title(); ?></h3>
 			<?php the_excerpt(); ?>
 		</div>
-		<a class="readmore" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Читать далее →', 'max_book' ); ?></a>
-	</div>
+		<span class="readmore"><u>Читать далее</u> →<?php //esc_html_e( 'Читать далее →', 'max_book' ); ?></span>
+	</a>
 </div>
