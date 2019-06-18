@@ -48,7 +48,6 @@ if ( ! function_exists( 'max_book_setup' ) ) :
 			'service'	=> esc_html__( 'Footer 1-st column', 'max_book' ),
 			'info'	=> esc_html__( 'Footer 2-st column', 'max_book' ),
 			'about'	=> esc_html__( 'Footer 3-st column', 'max_book' ),
-			'links'	=> esc_html__( 'Footer 4-st column', 'max_book' ),
 			'footer-links'	=> esc_html__( 'Footer links', 'max_book' ),
 		) );
 
@@ -136,6 +135,16 @@ function max_book_widgets_init() {
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Подвал - последняя колонка', 'max_book' ),
+		'id'            => 'footer-last',
+		'description'   => esc_html__( 'Add widgets here.', 'max_book' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title" hidden>',
 		'after_title'   => '</h2>',
 	) );
 }
