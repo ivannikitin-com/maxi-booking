@@ -92,12 +92,7 @@
 					</div>
 					<div class="col-sm-6 col-md-3 footer-menu-blog">
 						<?php
-							wp_nav_menu( array(
-								'theme_location' 	=> 'links',
-								'container'      	=> 'ul',
-								'container_class'	=> 'menu',
-								'depth'				=> 0,
-							) );
+							get_sidebar( 'footer-last' );
 						?>
 					</div>
 					<div class="col-12 footer-dss">
