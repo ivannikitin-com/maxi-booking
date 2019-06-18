@@ -75,8 +75,8 @@ jQuery(function($) {
 		}
 	});
 
-	//clients carousel
-	$(".reviews-carousel .owl-carousel")
+	//reviews carousel (main page)
+	$(".products.page-main .reviews-carousel .owl-carousel")
 		.addClass("nav")
 		.owlCarousel({
 			margin: 0,
@@ -86,6 +86,22 @@ jQuery(function($) {
 			dots: false,
 			autoplay: false,
 			autoplayTimeout: 3000,
+			autoHeight: false,
+			responsive: { 0: { items: 1 } }
+		});
+
+	//reviews carousel (opt. bookings)
+	$(".page.optimized-bookings .reviews-carousel .owl-carousel")
+		.addClass("nav")
+		.owlCarousel({
+			margin: 0,
+			responsiveClass: true,
+			loop: true,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			autoplayTimeout: 3000,
+			autoHeight: true,
 			responsive: { 0: { items: 1 } }
 		});
 

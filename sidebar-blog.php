@@ -12,4 +12,7 @@ if ( ! is_active_sidebar( 'blog-category-footer' ) ) {
 }
 ?>
 
+<div class="container">
 <?php dynamic_sidebar( 'blog-category-footer' ); ?>
+</div>
+
